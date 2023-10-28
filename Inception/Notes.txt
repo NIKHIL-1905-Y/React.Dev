@@ -1,0 +1,75 @@
+1. **Emmet:**
+   Emmet is a web development tool that helps web developers write HTML and CSS code more quickly and efficiently. 
+   It's a shorthand syntax that allows you to generate HTML and CSS code using abbreviations. 
+
+   For example, you can type
+    `div#container>ul>li.item*3` 
+
+    and expand it into an HTML structure with a div containing an unordered list with three list items, 
+    complete with IDs and classes.
+     Emmet is widely used in code editors and integrated development environments (IDEs) to boost productivity when 
+     writing code for web projects.
+
+2. **Difference between a Library and Framework:**
+   - **Library:** A library is a collection of pre-written code modules that can be used to perform specific
+    tasks or functions. It provides a set of functions and classes that you can call in your code as needed. 
+    You have more control over the flow of your program when using a library, and you can choose which parts 
+    of the library to use.
+   - **Framework:** A framework is a more comprehensive and structured set of code that dictates the architecture
+    and flow of your application. It typically provides a skeleton or foundation for building an application. 
+    With a framework, you must adhere to its conventions and design patterns. Frameworks often include libraries
+   but also impose a particular structure on your project.
+
+3. **CDN (Content Delivery Network):**
+   A CDN is a network of geographically distributed servers that work together to deliver web content, such as 
+   HTML pages, CSS files, JavaScript, images, and other assets, to users from a location that's physically closer to them.
+   CDNs are used to improve the speed and availability of web content by reducing latency and distributing the load across
+   multiple servers. Web developers use CDNs to deliver their website's resources faster and more reliably to end-users, 
+   resulting
+   in a better user experience.
+
+4. **Why is React known as React?**
+   React, a popular JavaScript library for building user interfaces, is known as "React" because it refers to how 
+   the library reacts to changes in data and updates the user interface accordingly. 
+   React's core concept is the virtual DOM (Document Object Model), which efficiently updates only the parts of the 
+   actual DOM that have changed, making the user interface highly responsive and reactive to data changes.
+
+5. **Cross-Origin in the Script Tag:**
+   When you include a script from an external source (e.g., a different domain) in your web page using a
+  script tag, it's subject to the same-origin policy. This policy is a security feature in web browsers that
+ restricts web pages from making requests to a different domain than the one from which the web page originated.
+ Cross-origin requests, by default, are blocked for security reasons. To work around this, you can use techniques 
+ like Cross-Origin Resource Sharing (CORS) or JSONP to allow controlled cross-origin interactions.
+
+6. **Difference between React and ReactDOM:**
+   - **React:** React is a JavaScript library for building user interfaces. It provides a way to create reusable
+    UI components and manage the application's state efficiently. React allows you to describe how your UI should
+   look at any point in time and automatically updates the DOM to match this description.
+
+   - **ReactDOM:** 
+   ReactDOM is a package within the React ecosystem that is specifically responsible for rendering 
+   React components to the DOM (Document Object Model). It acts as the bridge between React's virtual 
+   DOM and the actual DOM of the web page. You typically interact with ReactDOM when you want to render
+   a React component into a specific HTML element on a web page.
+
+7. **Difference between react.development.js and react.production.js files via CDN:**
+   - `react.development.js`: 
+   This file contains the development version of the React library. 
+   It includes additional warnings and debugging information that can be helpful during development
+    but also makes the code larger. It's not optimized for production use.
+
+   - `react.production.js`: This file contains the production version of the React library.
+    It omits the development warnings and debugging tools, resulting in a smaller and more
+     efficient bundle. This version is intended for use in production environments to improve
+      the performance of your React applications.
+
+8. **Async and Defer:**
+   - **Async:** When you include a script in your HTML document using the `async` attribute, the browser will
+    download the script in the background while parsing the HTML. Once the script is downloaded, it will be executed,
+    but it won't block the HTML parsing process. This is useful for non-blocking scripts, such as analytics or certain
+     third-party libraries, which don't depend on the order of execution.
+
+   - **Defer:** When you include a script using the `defer` attribute, the browser will also download the script in the
+    background while parsing the HTML. However, the script is executed after the HTML parsing is complete, just before 
+    the `DOMContentLoaded` event is fired. This is often used for scripts that need to be executed in a specific order 
+    or when the DOM structure is ready, such as application-specific JavaScript.
