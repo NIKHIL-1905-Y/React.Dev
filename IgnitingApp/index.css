@@ -1,0 +1,20 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+#parent{
+    height: 100vw;
+    width: 100%;
+    background-color: aquamarine;
+}
+
+#child{
+    height: 30vw;
+    width: 50%;
+    background-color: chartreuse;
+    position: fixed;
+}
